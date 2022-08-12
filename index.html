@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework Javascript</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+	<nav class="navbar navbar-expand-lg bg-primary">
+		<div class="container">
+			<a class="navbar-brand text-white" href="">Homework Javascript</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">List</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#1">Conversion from Celsius to Fahrenheit</a></li>
+							<li><a class="dropdown-item" href="#2">Convert from Pounds to Kilograms</a></li>
+							<li><a class="dropdown-item" href="#3">Convert from kilometers to miles</a></li>
+							<li><a class="dropdown-item" href="#4">Calculate the area of a right triangle</a></li>
+							<li><a class="dropdown-item" href="#5">The largest number</a></li>
+							<li><a class="dropdown-item" href="#6">Even and odd</a></li>
+							<li><a class="dropdown-item" href="#7">Table</a></li>
+							<li><a class="dropdown-item" href="#8">Greater number</a></li>
+							<li><a class="dropdown-item" href="#9">The longer name</a></li>
+							<li><a class="dropdown-item" href="#10">All names that start with a certain letter</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="container my-5">
+		<section class="row border border-primary p-5 m-5" id="1">
+			<div class="co-12">
+				<h2 class="text-primary">Conversion from Celsius to Fahrenheit</h2>
+				<div class="mb-3 row">
+					<label for="cnadf" class="col-sm-1 col-form-label">Celsius</label>
+					<div class="col-sm-11">
+						<input type="number" class="form-control" id="cnadf" min="-100" max="100" value="0">
+					</div>
+				</div>
+				<p>Fahrenheit <span class="lead nodisplay" id="output-cnadf"></span></p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="2">
+			<div class="co-12">
+				<h2 class="text-primary">Convert from Pounds to Kilograms</h2>
+				<div class="mb-3 row">
+					<label for="pound" class="col-sm-1 col-form-label">Pounds</label>
+					<div class="col-sm-11">
+						<input type="number" class="form-control" id="pound" min="0" value="0">
+					</div>
+				</div>
+				<p>Kilograms <span class="lead nodisplay" id="output-kg"></span></p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="3">
+			<div class="col-12">
+				<h2 class="text-primary">Convert from kilometers to miles</h2>
+				<div class="mb-3 row">
+					<label for="kilometer" class="col-sm-1 col-form-label">Kilometers</label>
+					<div class="col-sm-11">
+						<input type="number" class="form-control" id="kilometer" min="0" value="0">
+					</div>
+				</div>
+				<p>Miles <span class="lead nodisplay" id="output-mi"></span></p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="4">
+			<div class="col-12">
+				<h2 class="text-primary">Calculate the area of a right triangle</h2>
+				<form action="">
+					<div class="mb-3 row">
+						<label for="base" class="col-sm-1 col-form-label">Base</label>
+						<div class="col-sm-5">
+							<input type="number" class="form-control" id="base" min="0" value="0">
+						</div>
+						<label for="height" class="col-sm-1 col-form-label">Height</label>
+						<div class="col-sm-5">
+							<input type="number" class="form-control" id="height" min="0" value="0">
+						</div>
+					</div>
+					<button type="button" class="btn btn-success" id="calculate">to calculate</button>
+				</form>
+				<p>Area <span class="lead nodisplay" id="output-area"></span></p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="5">
+			<div class="col-12">
+				<h2 class="text-primary">The largest number</h2>
+				<p>Numbers = [4, 6, 76, 20, 64, 128, 500, 3, 5]</p>
+				<p>The largest number is <span class="lead nodisplay" id="output-number"></span></p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="6">
+			<div class="col-12">
+				<h2 class="text-primary">Even and odd</h2>
+				<p>Numbers = [1, 6, 8, 4, 2, 7, 10, 3, 5]</p>
+				<p class="lead nodisplay" id="output-evenOdd"></p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="7">
+			<div class="col-12">
+				<h2 class="text-primary">Table</h2>
+				<div class="lead" id="output-table"></div>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="8">
+			<div class="col-12">
+				<h2 class="text-primary">Greater number</h2>
+				<div>Numbers: 5, 2, 6</div>
+				<p>Greater number is <span class="lead nodisplay" id="output-greater"></span>.</p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="9">
+			<div class="col-12">
+				<h2 class="text-primary">The longer name</h2>
+				<div>['Nightcrawler', 'Profesor Charles Xavier', 'Deadpool', 'Ciclope', 'Magneto']</div>
+				<p>The longer name is <span class="lead nodisplay" id="output-longerName"></span>.</p>
+			</div>
+		</section>
+		<section class="row border border-primary p-5 m-5" id="10">
+			<div class="col-12">
+				<h2 class="text-primary">All names that start with a certain letter</h2>
+				<div>['Doom', 'Dr. Strange', 'Hulk', 'She Hulk', 'Spiderman', 'Captain Marvel']</div>
+				<p>All names that start with a certain letter are: <span class="lead nodisplay" id="output-sameLetter"></span>.
+				</p>
+			</div>
+		</section>
+	</main>
+	<footer class="footer mt-auto py-3 bg-primary">
+		<div class="container text-center">
+			<div class="row">
+				<div class="lead col-12">
+					<a class="text-decoration-none text-white" href="https://aureliogreco.altervista.org/" target="_blank"
+						title="Go to Aurelio Greco's website">Aurelio<b>Greco<b></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
